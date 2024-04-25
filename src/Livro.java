@@ -3,10 +3,10 @@ public class Livro {
     private  String nome;
     private String autor;
     private int ano;
-    private  boolean disponibilidade;
+    private  Boolean disponibilidade;
 
 
-    public Livro(String nome, String autor, int ano, boolean disponibilidade) {
+    public Livro(String nome, String autor, int ano, Boolean disponibilidade) {
         this.nome = nome;
         this.autor = autor;
         this.ano = ano;
@@ -48,7 +48,7 @@ public class Livro {
         this.autor = autor;
     }
 
-    public void setDisponibilidade(boolean disponibilidade) {
+    public void setDisponibilidade(Boolean disponibilidade) {
 
         this.disponibilidade = disponibilidade;
     }

@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Livro pequenoPrincipe = new Livro("Pequeno Principe", " Antoine de Saint-Exupéry", 1943, true);
+        Livro pequenoPrincipe = new Livro("Pequeno Príncipe", " Antoine de Saint-Exupéry", 1943, true);
         Livro domQuixote = new Livro("Dom Quixote", "Miguel de Cervantes", 1605,  false);
         Livro aArteDaGuerra = new Livro("A Arte da Guerra", "Sun Tzu", 1996, true);
 
@@ -11,7 +11,8 @@ public class Main {
 
         copia.copiarLivro(pequenoPrincipe, 11);
 
-       // System.out.println(pequenoPrincipe.getNome());
+        //System.out.println(pequenoPrincipe.getNome());
+
 
         Prateleira prateleira = new Prateleira("Literatura");
         prateleira.adicionarLivro(domQuixote);
@@ -28,6 +29,5 @@ public class Main {
             System.out.println("Nome: " + livro.getNome() + " - Disponível: " + (livro.isDisponibilidade() ? "Sim" : "Não"));
         }
 
-        System.out.println(atendente.emprestarLivro(prateleira, "Dom Quixote"));
     }
 }
